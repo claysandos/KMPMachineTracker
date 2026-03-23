@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/canam"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFF"
+    android:backgroundTint="#FFFF"
+    android:foregroundTint="#FFFF"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="150dp"
+        android:layout_height="85dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/kmp" />
+
+    <TextView
+        android:id="@+id/fragmentTitle"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="center"
+        android:text="Fragment Title"
+        android:textColor="#000000"
+        android:textSize="30dp" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/FragmentView"
+        android:name="com.example.kmpmachinetracker.HomeFragment"
+        android:layout_width="400dp"
+        android:layout_height="550dp"
+        android:layout_gravity="center"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:id="@+id/mainMenu"
+        android:layout_width="400dp"
+        android:layout_height="5dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="10dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="100dp"
+            android:layout_weight="1"
+            android:backgroundTint="#DD0101"
+            android:drawableTop="@android:drawable/ic_media_rew"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/goHome"
+            android:layout_width="10dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="100dp"
+            android:layout_weight="1"
+            android:backgroundTint="#DD0101"
+            android:drawableTop="@android:drawable/ic_menu_today"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+</LinearLayout>

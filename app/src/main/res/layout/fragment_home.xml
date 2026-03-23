@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#FFFFFFFF"
+    tools:context=".HomeFragment">
+
+
+    <Button
+        android:id="@+id/activeServiceMachines"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginBottom="305dp"
+        android:backgroundTint="#DD0101"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Active Service Machines"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/activeSoldMachines"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="305dp"
+        android:backgroundTint="#DD0101"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Active Sold Machines"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/addSoldMachine"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="35dp"
+        android:backgroundTint="#DD0101"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Add Sold Machine"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/addServiceMachine"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="180dp"
+        android:backgroundTint="#DD0101"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Add Service Machine"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
