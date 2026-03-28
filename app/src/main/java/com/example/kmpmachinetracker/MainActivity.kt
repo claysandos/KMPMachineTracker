@@ -2,6 +2,7 @@ package com.example.kmpmachinetracker
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
+import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.example.kmpmachinetracker.databinding.ActivityMainBinding
@@ -19,6 +20,9 @@ class MainActivity : AppCompatActivity() {
             layoutInflater
         )
     }
+
+    // Active service machine data
+    val activeServiceMachineViewModel: ActiveServiceMachineViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -61,6 +65,5 @@ class MainActivity : AppCompatActivity() {
         }
         lastFragmentTitle = activityMainBinding.fragmentTitle.text.toString()
         activityMainBinding.fragmentTitle.text = fragmentName
-
     }
 }

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/serviceBackground"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="#FFFFFF"
+    android:foregroundTint="#FFFFFF">
+
+    <ImageView
+        android:id="@+id/serviceBrandImage"
+        android:layout_width="25dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/honda" />
+
+    <LinearLayout
+        android:id="@+id/serviceDetailsHorizontalLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/serviceLabelVerticalLayout"
+            android:layout_width="30dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:gravity="right|center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/serviceMachineNameLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="Machine:"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/serviceCustomerNameLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="Name:"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/serviceColorLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="Color:"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/serviceTimeLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:gravity="right"
+                android:text="Time:" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/serviceDataVerticalLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/serviceMachineName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:text="2015 CRF450R"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/serviceCustomerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Sandos, Clay"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/serviceMachineColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center_horizontal"
+                android:text="Red"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/serviceMachineTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3:00" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/serviceButtonsVerticalLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="right"
+            android:orientation="vertical"
+            android:paddingTop="5dp"
+            android:paddingRight="5dp">
+
+            <Button
+                android:id="@+id/serviceRemoveMachine"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="5dp"
+                android:background="#000000"
+                android:backgroundTint="#FFFFFF"
+                android:backgroundTintMode="screen"
+                app:icon="@android:drawable/btn_dialog"
+                app:iconGravity="textStart"
+                app:iconPadding="0dp"
+                app:iconSize="25dp"
+                app:iconTint="#DD0101"
+                app:iconTintMode="add" />
+
+            <Button
+                android:id="@+id/serviceReadyButton"
+                android:layout_width="125dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#DD0101"
+                android:text="Not Ready" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

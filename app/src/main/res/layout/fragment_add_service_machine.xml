@@ -1,14 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/background"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="5dp"
     tools:context=".AddServiceMachineFragment">
 
     <LinearLayout
+        android:id="@+id/addServiceMachineVerticalLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/addServiceMachineHorizontalLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/serviceAddCustomMachineLabel"
+                android:layout_width="165dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:gravity="center"
+                android:text="Not seeing your machine? Add a custom machine here:" />
+
+            <Button
+                android:id="@+id/serviceAddCustomMachineButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="#DD0101"
+                android:text="Add Custom Machine" />
+        </LinearLayout>
 
         <TextView
             android:id="@+id/typeLabel"
@@ -17,7 +47,7 @@
             android:fontFamily="sans-serif-condensed-medium"
             android:gravity="center"
             android:text="Type"
-            android:textSize="24dp" />
+            android:textSize="20sp" />
 
         <Spinner
             android:id="@+id/type"
@@ -32,7 +62,7 @@
             android:fontFamily="sans-serif-condensed-medium"
             android:gravity="center"
             android:text="Subtype"
-            android:textSize="24dp" />
+            android:textSize="20sp" />
 
         <Spinner
             android:id="@+id/subtype"
@@ -47,7 +77,7 @@
             android:fontFamily="sans-serif-condensed-medium"
             android:gravity="center"
             android:text="Brand"
-            android:textSize="24dp" />
+            android:textSize="20sp" />
 
         <Spinner
             android:id="@+id/brand"
@@ -62,7 +92,7 @@
             android:fontFamily="sans-serif-condensed-medium"
             android:gravity="center"
             android:text="Year"
-            android:textSize="24dp" />
+            android:textSize="20sp" />
 
         <Spinner
             android:id="@+id/year"
@@ -77,7 +107,7 @@
             android:fontFamily="sans-serif-condensed-medium"
             android:gravity="center"
             android:text="Model"
-            android:textSize="24dp" />
+            android:textSize="20sp" />
 
         <Spinner
             android:id="@+id/model"
@@ -92,31 +122,12 @@
             android:fontFamily="sans-serif-condensed-medium"
             android:gravity="center"
             android:text="Color"
-            android:textSize="24dp" />
+            android:textSize="20sp" />
 
         <Spinner
             android:id="@+id/color"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
-
-        <TextView
-            android:id="@+id/stockLabel"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:fontFamily="sans-serif-condensed-medium"
-            android:gravity="center"
-            android:text="Stock"
-            android:textSize="24dp" />
-
-        <EditText
-            android:id="@+id/stock"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:fontFamily="sans-serif-condensed-medium"
-            android:hint="99999"
-            android:inputType="text" />
 
         <TextView
             android:id="@+id/customerLabel"
@@ -126,12 +137,12 @@
             android:fontFamily="sans-serif-condensed-medium"
             android:gravity="center"
             android:text="Customer"
-            android:textSize="24dp" />
+            android:textSize="20sp" />
 
         <EditText
             android:id="@+id/customer"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:ems="10"
             android:hint="Malone"
             android:inputType="text" />
@@ -144,15 +155,24 @@
             android:fontFamily="sans-serif-condensed-medium"
             android:gravity="center"
             android:text="Time"
-            android:textSize="24dp" />
+            android:textSize="20sp" />
 
         <EditText
             android:id="@+id/time"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:ems="10"
             android:hint="12:00"
             android:inputType="time" />
+
+        <Button
+            android:id="@+id/serviceAddMachineButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#DD0101"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="Add Machine"
+            android:textSize="16sp" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
